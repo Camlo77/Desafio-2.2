@@ -2,3 +2,28 @@
     margin: 0;
     padding: 0;
 }
+.layout{
+    background-color: antiquewhite;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "menu main"
+    "footer footer";
+    min-height: 100dvh;
+}
+header{
+    grid-area: header;
+    background-color: rgb(215, 234, 250);
+}
+menu{
+    grid-area: menu;
+    background-color: rgb(215, 250, 241);
+}
+main{
+    grid-area: main;
+    background-color: rgb(242, 215, 250);
+}
+footer{
+    grid-area: footer;
+    background-color: rgb(242, 250, 215);
+}
