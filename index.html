@@ -5,48 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happyvinyl</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="layout">
       <header><h1>Pokimon Cards</h1></header>
       <menu>
-        <h3>Categorias</h3>
-        <ul>
-          <li>1ra gen <span>(15)</span></li>
-          <li>2da gen <span>(7)</span></li>
-          <li>3ra gen <span>(11)</span></li>
-          <li>4ta gen <span>(2)</span></li>
-          <li>5ta gen <span>(10)</span></li>
-        </ul>
+        <div class="menu-container">
+          <h2>Categorias</h2>
+          <ul>
+            <li>
+              <a href="#">1ra gen</a>
+              <span class="space-mono-regular">(15)</span>
+            </li>
+            <li>
+              <a href="#">2da gen</a>
+              <span class="space-mono-regular">(7)</span>
+            </li>
+            <li>
+              <a href="#">3ra gen</a>
+              <span class="space-mono-regular">(11)</span>
+            </li>
+            <li>
+              <a href="#">4ta gen</a>
+              <span class="space-mono-regular">(2)</span>
+            </li>
+            <li>
+              <a href="#">5ta gen</a>
+              <span class="space-mono-regular">(10)</span>
+            </li>
+          </ul>
+        </div>
       </menu>
       <main>
-        <div class="card">
-          <img src="" alt="" />
-          <h3>name</h3>
-          <p>$39.99</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3>name</h3>
-          <p>$39.99</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3>name</h3>
-          <p>$39.99</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3>name</h3>
-          <p>$39.99</p>
-        </div>
-        <div class="card">
-          <img src="" alt="" />
-          <h3>name</h3>
-          <p>$39.99</p>
+        <div class="grid-product">
+          <div class="card">
+            <img src="./assets/img/Dragonite.png" alt="Dragonite sar" />
+            <h3>Dragonite Mega</h3>
+            <p class="space-mono-regular">$999.99</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/Marill.png" alt="Marill" />
+            <h3>Marill</h3>
+            <p class="space-mono-regular">$39.99</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/Rowlet.png" alt="Rowlet" />
+            <h3>Rowlet</h3>
+            <p class="space-mono-regular">$49.99</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/Talonflame.png" alt="Talonflame" />
+            <h3>Talonflame</h3>
+            <p class="space-mono-regular">$79.99</p>
+            <button>Comprar</button>
+          </div>
+          <div class="card">
+            <img src="./assets/img/Togekiss.png" alt="Togekiss" />
+            <h3>Togekiss</h3>
+            <p class="space-mono-regular">$129.99</p>
+            <button>Comprar</button>
+          </div>
         </div>
       </main>
-      <footer><p>@Pokimon.inc</p></footer>
+      <footer>
+        <p>
+          <a href="https://tcg.pokemon.com/es-es/" target="_blank"
+            >@Pokimon.inc</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

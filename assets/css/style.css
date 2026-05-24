@@ -1,29 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.layout{
-    background-color: antiquewhite;
-    display: grid;
-    grid-template-areas: 
+body {
+  font-family: "Nunito", sans-serif;
+}
+.layout {
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-areas:
     "header header"
     "menu main"
     "footer footer";
-    min-height: 100dvh;
+  grid-template-columns: 9rem 1fr;
+  grid-template-rows: 4rem 1fr 3rem;
+  height: 100dvh;
 }
-header{
-    grid-area: header;
-    background-color: rgb(215, 234, 250);
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
-menu{
-    grid-area: menu;
-    background-color: rgb(215, 250, 241);
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: header;
+  background-color: #1a1a2e;
+  color: #ffcb05;
 }
-main{
-    grid-area: main;
-    background-color: rgb(242, 215, 250);
+header h1 {
+  -webkit-text-stroke: 0.5px #cc0000;
 }
-footer{
-    grid-area: footer;
-    background-color: rgb(242, 250, 215);
+menu {
+  grid-area: menu;
+  background-color: #16213e;
+  color: #006bec;
+}
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+menu h2 {
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+li:hover {
+  color: #cc0000;
+}
+menu a {
+  text-decoration: none;
+  color: inherit;
+}
+main {
+  grid-area: main;
+  background-color: #f4f6fb;
+}
+.grid-product {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  justify-items: center;
+}
+img {
+  width: 250px;
+  padding-bottom: 0.5rem;
+}
+.card {
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid #ffcb05;
+  box-shadow: 0 5px 15px rgba(0, 0, 1, 1);
+  background-color: #ffffff;
+  color: #1a1a2e;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.8rem;
+}
+.card:hover {
+  border-color: #cc0000;
+}
+button {
+  background-color: #3b4cca;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 2rem;
+}
+footer {
+  align-items: center;
+  background-color: #0d0d1a;
+  display: flex;
+  font-size: 0.95rem;
+  grid-area: footer;
+  justify-content: center;
 }
